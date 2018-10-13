@@ -1,0 +1,65 @@
+body {
+    /* background-image: url("../images/MLP_The_Movie_background_art_-_Canterlot_plaza.jpg"); */
+    background-image: url("../images/bg2r2ss_by_mlp_vector_collabs-d52otvk.png");
+    background-size: 100%;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    line-height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+b {
+    font-weight: bold;
+}
+
+.container {
+    width: 760px;
+    background-color: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    margin: 0 auto;
+}
+
+
+/* header */
+header {
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Target Number vs Current Total */
+#numbers {
+    background-color: lightcoral;
+}
+
+/* Target Number vs Current Total */
+#score {
+    background-color: lightgreen;
+}
+
+/* crystal images */
+.crystal {
+    width: 100px;
+    height: 100px;
+    z-index: 99;
+}
+
+/* footer */
+footer {
+    font-size: 12px;
+}
