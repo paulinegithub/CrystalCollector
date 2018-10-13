@@ -1,24 +1,26 @@
 body {
     /* background-image: url("../images/MLP_The_Movie_background_art_-_Canterlot_plaza.jpg"); */
-    background-image: url("../images/bg2r2ss_by_mlp_vector_collabs-d52otvk.png");
-    background-size: 100%;
+    /* background-image: url("../images/bg2r2ss_by_mlp_vector_collabs-d52otvk.png"); */
+    background-image: url("../images/my_little_pony_wallpaper_by_chellytheeevee-d4gmf3g.png");
+        background-size: 100%;
     font-family: 'Kodchasan', sans-serif;
     font-size: 16px;
 }
 
 p {
     line-height: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-div {
+.main {
     margin: 20px;
-    padding: 10px;
 }
 
 h2 {
     font-size: 24px;
+}
+
+.val {
+    font-size: 20px;
 }
 
 b {
@@ -26,40 +28,100 @@ b {
 }
 
 .container {
-    width: 760px;
+    width: 660px;
     background-color: white;
-    opacity: 0.85;
-    filter: alpha(opacity=85);
+    opacity: 0.90;
+    filter: alpha(opacity=90);
     margin: 0 auto;
 }
 
-
 /* header */
 header {
-    background-color: lightgoldenrodyellow;
+    background-color: lavender;
     padding: 20px;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Target Number vs Current Total */
 #numbers {
-    background-color: lightcoral;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 /* Target Number vs Current Total */
 #score {
-    background-color: lightgreen;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
 }
 
 /* crystal images */
 .crystal {
-    width: 100px;
-    height: 100px;
-    z-index: 99;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+/* target number */
+#target {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+
+/* last clicked */
+/* #last-clicked {
+    background-color: lavenderblush;
+    padding: 10px;
+} */
+
+/* current total */
+#current {
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+/* wins */
+#wins {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* losses */
+#losses {
+    background-color: lightcoral;
+    padding: 10px;
 }
 
 /* footer */
 footer {
-    font-size: 12px;
+    font-size: 10px;
+}
+
+/* media screen */
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .crystal {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .crystal {
+        width: 90px;
+        height: 90px;
+    }
 }

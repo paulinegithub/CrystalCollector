@@ -1,4 +1,3 @@
-// Wait for document to load before running js
 $(document).ready(function () {
 
     // starting placeholder variables
@@ -6,7 +5,7 @@ $(document).ready(function () {
     var currentVal = 0;
     var wins = 0;
     var losses = 0;
-    var crystalVal = 0;
+    var crystalVal = "";
 
     // function to give target value (random number between 19 - 120)
     function randomTargetVal() {
@@ -15,24 +14,21 @@ $(document).ready(function () {
 
     // function to update screen
     function score() {
-        $("#target").html("<b>Target Number: </b>" + targetVal); // show target value
-        $("#current").html("<b>Current Total: </b>" + currentVal); // show current score
+        $("#target").html("<b>Target Number: <span class='val'>" + targetVal + "</span></b>"); // show target value
+        // $("#last-clicked").html("<b>Value of last crystal clicked: <span class='val'>" + crystalVal + "</span></b>"); // show value of last crystal clicked
+        $("#current").html("<b>Current Total: <span class='val'>" + currentVal + "</span></b>"); // show current total
         $("#wins").html("<b>Wins: </b>" + wins); // show wins
         $("#losses").html("<b>Losses: </b>" + losses); // show losses
     }
-
-    // function to give crystal value (random number between 1 - 12)
-    // function randomCrystalVal() {
-    //     crystalVal = Math.floor(Math.random() * 12) + 1;
-    // }
 
     // function to reset round
     function reset() {
         randomTargetVal(); // get new target number
         currentVal = 0; // clear currentVal
+        crystalVal = ""; // clear crystalVal
         score(); // show score
 
-        // assign randomVal to each crystal color
+        // assign a set random value (between 1 - 12) to each crystal during the game
         $("#red").attr("value", Math.floor(Math.random() * 12) + 1);
         $("#blue").attr("value", Math.floor(Math.random() * 12) + 1);
         $("#yellow").attr("value", Math.floor(Math.random() * 12) + 1);
@@ -43,41 +39,37 @@ $(document).ready(function () {
         console.log("green: " + $("#green").attr("value"));
     }
 
-
-    // each crystal has 
-    // click on a crystal and add it to currentVal
-    // when user clicks on red crystal 
+    // do this whenever the user clicks on a crystal 
     $(".crystal").click(function () {
 
-        // get value at crystal clicked
+        // get value at the crystal clicked
         crystalVal = $(this).attr("value");
         console.log("crystalVal: " + crystalVal);
 
-        // add crystalVal currentVal
+        // add crystalVal to currentVal
         currentVal += parseInt(crystalVal);
         console.log("currentVal: " + currentVal);
 
         // win: when currentVal === targetVal
         if (currentVal === targetVal) {
             wins++; // increment wins
-            reset(); // play again
             console.log("wins: " + wins);
+            alert("Hooray, you got it!");
+            reset(); // play again after user clicks on alert
         }
 
         // lose: when currentVal > targetVal
         else if (currentVal > targetVal) {
             losses++; // increment losses
-            reset(); // play again
             console.log("losses: " + losses);
+            alert("Sorry :( Try to get the next number.");
+            reset(); // play again after user clicks on alert
         }
 
-        // update score
+        // update score between clicks when game is still active
         score();
     });
 
     // run initial game
     reset();
-
-    
-
 });

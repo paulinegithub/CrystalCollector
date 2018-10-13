@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+
+    <!-- css files -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--  JQuery and game files -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
-
     <div class="container">
 
         <!-- header -->
@@ -23,48 +28,59 @@
         </header>
 
         <!-- rules -->
-        <div id="rules">
-
+        <div id="rules" class="main">
             <h2>Rules:</h2>
-            <p>Match your total number to the target number to win. If you go above the target number, you lose.</p>
-            <p>Each time you click on a crystal, a random number of points will be added to your current total.</p>
+
+            <p><br>Each crystal has a hidden value. Each time you click on a crystal, its value will be added to your
+                current total.
+                <br><br>
+                To win the game, match your total to the target number shown. If you go above the target number, you
+                lose.
+                <br><br>When a new game is started, each crystal will have a new value.</p>
+
         </div>
 
-        <!-- crystals to click -->
-        <div id="crystals">
+        <!-- crystals to click on -->
+        <div id="crystals" class="main">
             <img id="red" class="crystal" value="0" src="assets/images/red.png">
             <img id="blue" class="crystal" value="0" src="assets/images/blue.png">
             <img id="yellow" class="crystal" value="0" src="assets/images/yellow.png">
             <img id="green" class="crystal" value="0" src="assets/images/green.png">
         </div>
 
-        <!-- current round -->
-        <div id="numbers">
+        <!-- current game stats -->
+        <div id="numbers" class="main">
             <p id="target"></p>
+            <!-- <p id="last-clicked"></p> -->
             <p id="current"></p>
         </div>
 
-        <!-- scores -->
-        <div id="score">
+        <!-- total scores -->
+        <div id="score" class="main">
             <p id="wins">Wins: 0</p>
             <p id="losses">Losses: 0</p>
         </div>
 
         <!-- footer -->
         <footer>
-            <p><b>Credits for source images:</b>
-                <ul>
-                    <li><a href="https://www.deviantart.com/grievousfan/art/MLP-Resource-Gems-474717224" target="_blank">Crystal
-                            images</a></li>
-                    <!-- <BR><a href="http://mlp.wikia.com/wiki/File:MLP_The_Movie_background_art_-_Canterlot_plaza.jpg"
+            <p><b>Credits for images:</b>
+
+                <br>Crystals: <a href="https://www.deviantart.com/grievousfan/art/MLP-Resource-Gems-474717224" target="_blank">grievousfan</a>
+                at deviantart</li>
+
+                <!-- <BR><a href="http://mlp.wikia.com/wiki/File:MLP_The_Movie_background_art_-_Canterlot_plaza.jpg"
                 target="_blank">Background image</a> -->
-                    <li><a href="https://www.deviantart.com/mlp-vector-collabs/art/Group-Background-2-Canterlot-Castle-302581728"
-                            target="_blank">Background image</a></li>
-                </ul>
+
+                <!-- <br>Background: <a href="https://www.deviantart.com/mlp-vector-collabs/art/Group-Background-2-Canterlot-Castle-302581728"
+                    target="_blank">MLP-Vector-Collabs</a> at deviantart -->
+
+                <br>Background: <a href="https://www.deviantart.com/nightsilverchelly/art/My-little-pony-Wallpaper-269784556"
+                    target="_blank">MLP-Vector-Collabs</a> at deviantart
+
             </p>
         </footer>
-    </div>
 
+    </div>
 </body>
 
 </html>
