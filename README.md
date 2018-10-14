@@ -1,9 +1,6 @@
 # Crystal Collector
 
-Link to Game:
-
-[https://plsenh.github.io/unit-4-game/](https://plsenh.github.io/unit-4-game/)
-
+**Link to Game:** [https://plsenh.github.io/unit-4-game/](https://plsenh.github.io/unit-4-game/)
 
 ![Crystal Collector snapshot](assets/images/crystal_collector.PNG)
 
