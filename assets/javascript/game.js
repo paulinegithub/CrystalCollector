@@ -62,8 +62,7 @@ $(document).ready(function () {
         else if (currentVal > targetVal) {
             losses++; // increment losses
             console.log("losses: " + losses);
-            // alert("Sorry :( Try to get the next number.");
-            $("#reset").html("Tap here to play again");
+            alert("Sorry :( Try to get the next number.");
             reset(); // play again after user clicks on alert
         }
 
