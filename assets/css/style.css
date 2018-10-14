@@ -55,7 +55,7 @@ header {
 #score {
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    width: 150px;
 }
 
 /* crystal images */
@@ -92,13 +92,13 @@ header {
 
 /* wins */
 #wins {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     padding: 10px;
 }
 
 /* losses */
 #losses {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     padding: 10px;
 }
 
@@ -133,5 +133,12 @@ footer {
     }
     #current, #target {
         width: 50px;
+    }
+    #score {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #numbers {
+        margin-bottom: 30px;
     }
 }
