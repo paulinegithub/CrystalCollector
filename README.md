@@ -1,5 +1,7 @@
-# unit-4-game
-[Crystal Collector](https://plsenh.github.io/unit-4-game/)
+# Crystal Collector
+
+Link to Game:
+[https://plsenh.github.io/unit-4-game/](https://plsenh.github.io/unit-4-game/)
 
 ## Rules
 
