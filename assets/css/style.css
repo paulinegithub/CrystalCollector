@@ -48,7 +48,7 @@ header {
 #numbers {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 /* Target Number vs Current Total */
@@ -63,12 +63,16 @@ header {
     width: 150px;
     height: 150px;
     text-align: center;
+
 }
 
 /* target number */
 #target {
     background-color: lightgoldenrodyellow;
-    padding: 10px;
+    padding: 20px;
+    width: 200px;
+    display:block;
+    float: left;
 }
 
 /* last clicked */
@@ -80,7 +84,10 @@ header {
 /* current total */
 #current {
     background-color: lightcyan;
-    padding: 10px;
+    padding: 20px;
+    width: 200px;
+    display:block;
+    float: right;
 }
 
 /* wins */
@@ -123,5 +130,8 @@ footer {
     .crystal {
         width: 130px;
         height: 130px;
+    }
+    #current, #target {
+        width: 50px;
     }
 }
