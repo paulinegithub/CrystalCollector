@@ -39,8 +39,16 @@ $(document).ready(function () {
         console.log("green: " + $("#green").attr("value"));
     }
 
+    var audio = document.createElement("audio");
+        audio.src="https://kahimyang.com/resources/sound/click.mp3";
+        audio.volume=0.10;
+        audio.autoPlay=false;
+        audio.preLoad=true;  
+
     // do this whenever the user clicks on a crystal 
     $(".crystal").click(function () {
+
+        audio.play(); // play sound
 
         // get value at the crystal clicked
         crystalVal = $(this).attr("value");

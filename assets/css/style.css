@@ -66,6 +66,11 @@ header {
 
 }
 
+.crystal:hover,  .crystal:active {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
 /* target number */
 #target {
     background-color: lightgoldenrodyellow;
