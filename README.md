@@ -17,6 +17,7 @@
 ## Built With
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - High-level programming language.
+- [jQuery](https://jquery.com/)
 - [VSC](https://code.visualstudio.com/) - Visual Studio Code is a source code editor developed by Microsoft.
 
 ## Author
