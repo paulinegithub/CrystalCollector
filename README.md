@@ -1,6 +1,6 @@
 # Crystal Collector
 
-## [Go to deployed app](https://plsenh.github.io/CrystalCollector/)
+## Link to deployed app [https://plsenh.github.io/CrystalCollector/](https://plsenh.github.io/CrystalCollector/)
 
 ![Crystals](assets/images/crystal_collector4.PNG)
 
