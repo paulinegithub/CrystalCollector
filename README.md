@@ -23,4 +23,6 @@
 
 - **Pauline Senh** - [plsenh](https://github.com/plsenh)
 
-![Crystals](assets/images/crystal_collector.PNG)
+<p align="center">
+  <img src="assets/images/crystal_collector.PNG">
+</p>
