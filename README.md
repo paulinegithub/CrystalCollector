@@ -6,7 +6,7 @@
 
 ---
 
-## Games Rules
+## How to Play
 
 1. Each crystal has a hidden value. Each time a crystal is selected, its value will be added to your current total.
 
