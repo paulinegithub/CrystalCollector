@@ -18,9 +18,11 @@
 
 ## Built With
 
+- CSS3
+- HTML5
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [jQuery](https://jquery.com/)
-- [VSC](https://code.visualstudio.com/)
+- [jQuery](https://jquery.com/) - JavaScript library
+- [Visual Studio Code](https://code.visualstudio.com/) - source code editor developed by Microsoft
 
 ## Author
 
