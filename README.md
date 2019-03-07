@@ -14,6 +14,8 @@
 
 3. When a new game is started, each crystal will have a new value.
 
+---
+
 ## Built With
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -23,7 +25,3 @@
 ## Author
 
 - **Pauline Senh** - [plsenh](https://github.com/plsenh)
-
-<p align="center">
-  <img src="assets/images/crystal_collector.PNG">
-</p>
