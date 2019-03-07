@@ -16,7 +16,7 @@
 
 ---
 
-## Built With
+## Built With:
 
 - CSS3
 - HTML5
